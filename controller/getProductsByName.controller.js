@@ -28,7 +28,7 @@ Product.find()
 .catch(err => {
 
     // res.send(err);
-    logger.productLogger.log('error', 'error getting product by name');
+    //logger.productLogger.log('error', 'error getting product by name');
     console.log(err);
 })
 

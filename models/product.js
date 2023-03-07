@@ -18,6 +18,10 @@ const productSchema = new Schema({
     image: {
         type: String,
         required: true
+    },
+    owner: {
+        type: String,
+        required: false
     }
 }, { timestamps: true });
 

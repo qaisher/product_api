@@ -9,12 +9,12 @@ exports.updateProduct = (req, res) => {
     .then(result => {
 
         res.send(result);
-        logger.productLogger.log('info', 'product updated successfully');
+        //logger.productLogger.log('info', 'product updated successfully');
     })
     .catch(err => {
         
         res.send(err);
-        logger.productLogger.log('erro', 'product updated failed');
+        //logger.productLogger.log('erro', 'product updated failed');
         console.log(err);
     });
 }

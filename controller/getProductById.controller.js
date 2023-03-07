@@ -9,14 +9,15 @@ exports.getProductById = (req, res) => {
         .then((result) => {
 
             res.send(result);
-            logger.productLogger.log('info', 'success');
+            //logger.productLogger.log('info', 'success');
             //res.render('productById', { pageTitle: 'Display Product by ID', result });
         })
         .catch((err) => {
 
             res.send(err);
-            logger.productLogger.log('error', 'error getting product by id');
             console.log(err);
+            //logger.productLogger.log('error', 'error getting product by id');
+            
         })
 
 };

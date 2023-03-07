@@ -16,13 +16,13 @@ exports.getPublishedProducts = (req, res) => {
                 }
             }
             res.send(publishedProducts);
-            logger.productLogger.log('info', 'success published products only');
+            //logger.productLogger.log('info', 'success published products only');
             //res.render('published', { pageTitle: 'All Products Page', result })
         })
         .catch((err) => {
 
             res.send(err);
-            logger.productLogger.log('error', 'error getting published products');
+            //logger.productLogger.log('error', 'error getting published products');
             console.log(err);
         })
 

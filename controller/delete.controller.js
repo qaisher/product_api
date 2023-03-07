@@ -11,12 +11,12 @@ exports.deleteOne = (req, res) => {
         .then(result => {
            
             res.send(result);
-            logger.productLogger.log('info', 'item deleted successfully');
+            //logger.productLogger.log('info', 'item deleted successfully');
         })
         .catch(err => {
 
             res.send(err);
-            logger.productLogger.log('error', 'error deleting item');
+            //logger.productLogger.log('error', 'error deleting item');
             console.log(err);
         })
 };
